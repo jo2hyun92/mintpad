@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MINTPAD</title>
+    <link rel="stylesheet" href="/mintpad.css">
+    <link rel="icon" sizes="16X16 32X32 48X48" type="image/svg" href="./images/icon.svg">
+    
+</head>
+<body>
+    <main>
+        <h1>민트패드</h1>
+        <hr>
+        <section id="todo-list-group">
+            <div class="todo-category">
+                <ul>
+                    <span style="display: block;">오늘</span>
+                    <img src="/images/ic-add.svg" alt="" role="button" class="ic-add-btn">
+                </ul>
+            </div>
+            <div class="todo-category">
+                <ul>
+                    <span style="display: block;">내일</span>
+                    <img src="/images/ic-add.svg" alt="" role="button" class="ic-add-btn">
+                </ul>
+            </div>
+            <div class="todo-category">
+                <ul>
+                    <span style="display: block;">나중에</span>
+                    <img src="/images/ic-add.svg" alt="" role="button" class="ic-add-btn">
+                </ul>
+            </div>
+        </section>
+        <bottom-bar>
+            <section id="tag-list">
+                <input type="radio" name="tab1" id="tag-menu1" checked>
+                <label for="tag-menu1" class="tag-s">오늘</label>
+                <input type="radio" name="tab1" id="tag-menu2">
+                <label for="tag-menu2" class="tag-s">내일</label>
+                <input type="radio" name="tab1" id="tag-menu3">
+                <label for="tag-menu3" class="tag-s">나중에</label>
+            </section>
+            <section id="input-sec">
+                <input id="input-todo" type="text" class="input-s" placeholder="할 일 추가" maxlength='20'>
+                <button class="add-btn">추가</button>
+            </section>
+        </bottom-bar>
+    </main>
+</body>
+<script src="/mintpad.js"></script>
+</html>
